@@ -47,7 +47,7 @@ end;
 
 function TForm1.Test: TTuple<boolean, string>;
 begin
-  Result := TTuple<boolean,string>.Create(true, 'It Works');
+  Exit(Result.SendBack(true, 'It Works'));
 end;
 
 end.
